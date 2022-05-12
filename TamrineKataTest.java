@@ -10,7 +10,7 @@ public class TamrineKataTest {
     @Test
     void singular_or_plural() {
 
-        String[] number = {"1"};
+        String[] number = {"5"};
         String result = name(number);
 
 
@@ -24,8 +24,35 @@ public class TamrineKataTest {
         }else {
             return number[0]="apples";
 
+
         }
     }
 
-    
+    @Test
+    void pluar_bashad() {
+        String[] next_number = {"5"};
+        String result = nametwo(next_number);
+
+
+        assertEquals("apples", result);
+
+    }
+    private String nametwo(String[] next_number ){
+        return  "apples" ;
+
+    }
+
+
+    @Test
+    void javabe_asli() {
+       int f = 5;
+       boolean shart = isPlural(f);
+
+       assertEquals(true,shart);
 }
+private boolean isPlural (int f ){
+        return (f != 1);
+
+}
+}
+
